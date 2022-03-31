@@ -1,0 +1,75 @@
+.bg-image {
+    background-image: url('../images/photographer.jpg');
+    height: 600px;
+    width:100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background: url('../images/photographer.jpg') cover no-repeat; */
+}
+
+/* pseudo elements */
+.hello::before {
+    content: 'BTU';
+    color: red;
+    background-color: yellow;
+    font-size: 25px;
+}
+.hello::after {
+    content: ' \2665';
+}
+/* .hello::after {
+    content: ' ';
+    width:2px;
+    height: 30px;
+    background-color: brown;
+    display: inline-block;
+    margin-left: 50px;
+} */
+
+
+/* header styles */
+.nav-ul {
+    display: flex;
+}
+.header-wraper {
+    background-color: lightblue;
+    padding: 30px;
+}
+li {
+    margin-right: 25px;
+}
+a {
+    position: relative;
+    color: red;
+    transition: all 0.5s linear;
+}
+a::after {
+    content: ' ';
+    position: absolute;
+    bottom:-5px;
+    left:0;
+    width: 0%;
+    height: 2px;
+    background-color: blueviolet;
+    transition: all 0.5s linear;
+}
+a:hover::after {
+    width:80%;
+}
+
+.image-block {
+    background-image: url('../images/mohamed-ajufaan-GFcWwwGNu_w-unsplash.jpg');
+    width:100%;
+    height: 324px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+.image-block::before {
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    display: block;
+    opacity: 60%;
+}
